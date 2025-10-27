@@ -1,25 +1,25 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { FaUser, FaShoppingCart, FaSearch, FaBars, FaTimes } from "react-icons/fa";
 import arm from "../assests/img/arm.webp";
 import { Link } from "react-router-dom";
-import useCreate from "../store/ShopStore"; // ✅ گرفتن داده‌ها از Zustand
-import LayOut from "../layout/LayOut";
+import useCreate from "../store/ShopStore"; 
+
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // ✅ گرفتن محصولات از استور Zustand
+ 
   const products = useCreate((state) => state.products);
 
-  // ✅ محاسبه مجموع تعداد کل محصولات در سبد خرید
+  
   const totalCount = products.reduce((sum, p) => sum + (p.quantity || 0), 0);
 
   return (
     
     <div className="w-full shadow-md flex flex-col ">
-      {/* 🔹 بالای هدر */}
+    
       <header className="w-full bg-white py-3 px-4 sm:px-6 flex items-center justify-between">
-        {/* 🔸 لوگو */}
+      
         <div className="flex items-center">
           <Link to={"/"} className="block bg-gray-200 rounded-full overflow-hidden w-36 h-10 sm:w-60 sm:h-12">
             <img src={arm} alt="arm" className="w-full h-full object-cover" />
@@ -40,15 +40,15 @@ function Header() {
           </div>
         </div>
 
-        {/* 🔸 آیکون‌ها و دکمه‌ها */}
+   
         <div className="flex items-center gap-3 sm:gap-4">
-          {/* 🛒 آیکون سبد خرید */}
+        
           <div className="relative text-green-600 hover:text-green-800 transition">
             <Link to={"/shopBasket"}>
               <FaShoppingCart size={24} />
             </Link>
 
-            {/* ✅ نمایش تعداد محصولات */}
+          
             {totalCount > 0 && (
               <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center font-semibold">
                 {totalCount}
@@ -56,13 +56,12 @@ function Header() {
             )}
           </div>
 
-          {/* 👤 دکمه ورود */}
           <button className="hidden sm:flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 transition">
             <FaUser />
             <span>ورود به حساب کاربری</span>
           </button>
 
-          {/* ☰ منوی موبایل */}
+       
           <button
             className="sm:hidden text-green-600"
             onClick={() => setMenuOpen(!menuOpen)}
@@ -72,7 +71,7 @@ function Header() {
         </div>
       </header>
 
-      {/* 🔹 نوار لینک‌ها */}
+     
       <div
         className={`flex flex-col sm:flex-row w-full text-gray-800 justify-center gap-6 text-base font-semibold pt-2 pb-5 transition-all duration-300 ${
           menuOpen ? "max-h-96" : "max-h-0 overflow-hidden sm:max-h-full"
@@ -89,7 +88,7 @@ function Header() {
         </Link>
       </div>
 
-      {/* 🔹 باکس جستجو برای موبایل */}
+     
       <div className="sm:hidden px-4 pb-3">
         <div className="relative flex items-center w-full">
           <input
