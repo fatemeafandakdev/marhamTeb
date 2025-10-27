@@ -9,7 +9,7 @@ import ShopBasket from '../page/ShopBasket'
 import ScrollToTop from '../features/ScrollToTop'
 function AppRoutes() {
   return (
-   <BrowserRouter>
+   <BrowserRouter basename="/marhamTeb">
     <ScrollToTop/>
    <Routes>
    
