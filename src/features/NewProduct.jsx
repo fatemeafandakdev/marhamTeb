@@ -11,7 +11,7 @@ function NewProduct() {
 
   return (
     <div className='bg-gray-100 w-full rounded-t-xl py-10'>
-      <div className='w-[92%] m-auto'>
+      <div className='w-[96%] m-auto'>
         <h1 className="text-2xl font-bold mb-6 text-center">جدیدترین محصولات</h1>
 
         <Swiper
