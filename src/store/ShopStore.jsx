@@ -3,7 +3,7 @@ import { create } from "zustand";
 const useCreate = create((set) => ({
   products: [],
 
-  // افزودن محصول
+ 
   addProduct: (product) =>
     set((state) => {
       const exist = state.products.find((item) => item.id === product.id);
@@ -23,7 +23,7 @@ const useCreate = create((set) => ({
       }
     }),
 
-  // افزایش تعداد
+ 
   onIncrease: (id) =>
     set((state) => ({
       products: state.products.map((item) =>
@@ -31,7 +31,7 @@ const useCreate = create((set) => ({
       ),
     })),
 
-  // کاهش تعداد و حذف اگر صفر شد
+
   onDecrease: (id) =>
     set((state) => ({
       products: state.products
@@ -41,7 +41,7 @@ const useCreate = create((set) => ({
         .filter((item) => item.quantity > 0),
     })),
 
-  // حذف کامل محصول
+  
   removeProduct: (id) =>
     set((state) => ({
       products: state.products.filter((item) => item.id !== id),

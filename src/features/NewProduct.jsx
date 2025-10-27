@@ -29,7 +29,7 @@ function NewProduct() {
           {newProducts.map((item) => (
             <SwiperSlide
               key={item.id}
-              className="flex justify-center items-center"  // ✅ عکس در مرکز مخصوصاً موبایل
+              className="flex justify-center items-center"  
             >
               <ProductCard
                 id={item.id}
