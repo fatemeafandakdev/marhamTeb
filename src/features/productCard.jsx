@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function ProductCard({ img, name, price, id }) {
   return (
     <div className="
-      w-[80%] md:w-64 bg-white rounded-2xl border-2 m-auto border-green-400 
+      w-[80%] md:w-60 bg-white rounded-2xl border-2 m-auto border-green-400 
       shadow-lg hover:shadow-2xl overflow-hidden
     ">
       <div className="relative overflow-hidden h-64">

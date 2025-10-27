@@ -29,7 +29,7 @@ function NewProduct() {
           {newProducts.map((item) => (
             <SwiperSlide
               key={item.id}
-              className="flex justify-center items-center"  
+              className="flex justify-center items-center gap-4"  
             >
               <ProductCard
                 id={item.id}
