@@ -32,5 +32,5 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.ّFATEME12345 }}
+          github_token: ${{ secrets.ّfateme12345 }}
           publish_dir: ./build
