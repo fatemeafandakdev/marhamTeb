@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/marhamTeb/static/css/main.75ac61b3.css",
-    "main.js": "/marhamTeb/static/js/main.b5fe3cd1.js",
+    "main.js": "/marhamTeb/static/js/main.d759017a.js",
     "static/media/BYekan+.ttf": "/marhamTeb/static/media/BYekan+.f26972c64b83c2aea5ca.ttf",
     "static/media/spicy.webp": "/marhamTeb/static/media/spicy.5a5395317fc0e79f8182.webp",
     "static/media/pain.webp": "/marhamTeb/static/media/pain.9075e4e1fc3e14c562b5.webp",
@@ -46,10 +46,10 @@
     "static/media/free.webp": "/marhamTeb/static/media/free.d20abc9e266fda01c73f.webp",
     "index.html": "/marhamTeb/index.html",
     "main.75ac61b3.css.map": "/marhamTeb/static/css/main.75ac61b3.css.map",
-    "main.b5fe3cd1.js.map": "/marhamTeb/static/js/main.b5fe3cd1.js.map"
+    "main.d759017a.js.map": "/marhamTeb/static/js/main.d759017a.js.map"
   },
   "entrypoints": [
     "static/css/main.75ac61b3.css",
-    "static/js/main.b5fe3cd1.js"
+    "static/js/main.d759017a.js"
   ]
 }
